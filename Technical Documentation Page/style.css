@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-width: 320px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.6rem;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: 4px solid rgba(116, 116, 116, 0.6);
+  background-color: white;
+  padding: 0;
+}
+#navbar header {
+  height: 30px;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 15px;
+}
+#navbar ul {
+  list-style: none;
+  overflow-y: auto;
+  width: 100%;
+  height: 90%;
+  padding: 0;
+}
+#navbar ul li {
+  height: 50px;
+  border-top: 1px solid black;
+  padding: 10px 30px;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgb(67, 67, 67);
+}
+.nav-link:focus,
+.nav-link:active,
+.nav-link:visited,
+.nav-link:hover {
+  color: rgb(67, 67, 67);
+}
+#main-doc {
+  position: absolute;
+  top: 0;
+  left: 310px;
+  padding: 30px 30px 20px 40px;
+  line-height: 1.9rem;
+}
+.main-section header {
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: -20px;
+  margin: 10px 0px 10px -20px;
+}
+code {
+  display: block;
+  white-space: pre-line;
+  background-color: rgb(240, 238, 238);
+  padding: 10px 20px;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    padding-top: 0;
+    border: none;
+    min-width: 340px;
+  }
+  #navbar header {
+    height: 10%;
+    margin-top: 2%;
+  }
+  #navbar ul {
+    height: 90%;
+    border-top: 1px solid black;
+    border-right: none;
+    border-bottom: 2px solid black;
+  }
+  #main-doc {
+    position: absolute;
+    top: 290px;
+    left: 0;
+    padding-bottom: 80px;
+  }
+}
